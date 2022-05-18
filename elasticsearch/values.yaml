@@ -15,8 +15,8 @@ roles:
   remote_cluster_client: "true"
   ml: "true"
 
-replicas: 3
-minimumMasterNodes: 2
+replicas: 1
+minimumMasterNodes: 1
 
 esMajorVersion: ""
 
@@ -128,7 +128,7 @@ podSecurityPolicy:
       - emptyDir
 
 persistence:
-  enabled: true
+  enabled: false
   labels:
     # Add default labels for the volumeClaimTemplate of the StatefulSet
     enabled: false
